@@ -1,0 +1,10 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /user
+    
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
