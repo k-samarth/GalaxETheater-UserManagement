@@ -22,10 +22,10 @@ pipeline {
        steps{
          echo "Sonarqube codequality"
          sh '''
-      mvn clean verify sonar:sonar \
-        -Dsonar.projectKey=galaxemovie-usermanagement \
-        -Dsonar.host.url=http://20.205.141.142:9000 \
-        -Dsonar.login=sqp_95debbd461e72bf17da20d73e05193b516eda281
+    mvn clean verify sonar:sonar \
+      -Dsonar.projectKey=galaxemovie-usermanagement \
+      -Dsonar.host.url=http://20.205.141.142:9000 \
+      -Dsonar.login=sqp_ab4dc43532acae8e6a2bd4cd0d7fca54989a3de1
          '''
        }
     }
